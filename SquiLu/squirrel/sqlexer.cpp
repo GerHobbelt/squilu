@@ -301,7 +301,8 @@ SQInteger SQLexer::Lex(bool dontThrowIntegerOverflow)
 	data->svalue = NULL;
 	while(CUR_CHAR != SQUIRREL_EOB) {
 		switch(CUR_CHAR){
-		case _SC('\t'): case _SC('\r'): case _SC(' '): NEXT(); continue;
+		case _SC('\t'): case _SC('\r'): case _SC(' '):
+		    case _SC('\f'): case _SC('\v'): NEXT(); continue;
 		case _SC('\n'):
 			data->currentline++;
 			data->prevtoken=data->curtoken;
