@@ -176362,7 +176362,7 @@ extern const unsigned char isUpperMapTable[];
 #define isLowerMap(x) isLowerMapTable[((unsigned char)x)]
 #define isUpperMap(x) isUpperMapTable[((unsigned char)x)]
 
-//The functions bellow convert in place, overwiten passed paramters
+//The functions bellow convert in place, overwiten passed parameters
 int strLenSubSetLatinUtf8( const char *str );
 int nstrLenSubSetLatinUtf8( const char *str, int n );
 int isDeaccentableSubSetLatinUtf8( const char *str );
@@ -209708,7 +209708,7 @@ static char *rbuObjIterGetIndexCols(
 
 /*
 ** Assuming the current table columns are "a", "b" and "c", and the zObj
-** paramter is passed "old", return a string of the form:
+** parameter is passed "old", return a string of the form:
 **
 **     "old.a, old.b, old.b"
 **
@@ -242678,7 +242678,7 @@ struct Fts5VocabCursor {
   void *pStruct;                  /* From sqlite3Fts5StructureRef() */
 
   int nLeTerm;                    /* Size of zLeTerm in bytes */
-  char *zLeTerm;                  /* (term <= $zLeTerm) paramater, or NULL */
+  char *zLeTerm;                  /* (term <= $zLeTerm) parameter, or NULL */
 
   /* These are used by 'col' tables only */
   int iCol;

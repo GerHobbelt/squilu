@@ -128,7 +128,7 @@
 -added array built-in map(),reduce(),apply(),filter() and find()
 -generators hold only a weak reference of the enviroment object
 -removed 'vargv' and 'vargc' keywords
--now var args are passed as an array called vargv(as a paramter)
+-now var args are passed as an array called vargv(as a parameter)
 -removed 'parent' keyword
 -added class getbase() built in method
 -instanceof doesn't throw an exception if the left expression is not a class
@@ -331,7 +331,7 @@ will terminate the iteration but will not be returned as foreach iteration
 ***2004-04-21        ***
 ***version 1.0 beta 2***
 -minor compiler/parser bug fixes
--sq_newclosure has a different prototype, the "paramscheck" of paramter has been moved to the new function sq_setparamscheck()
+-sq_newclosure has a different prototype, the "paramscheck" of parameter has been moved to the new function sq_setparamscheck()
 -sq_setparamscheck allows to add automatic parameters type checking in native closures
 -sq_compile() lost the lineinfo parameter
 -new api sq_enabledebuginfo() globally sets compiler's debug info generation

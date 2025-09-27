@@ -617,7 +617,7 @@ static int _get_signal(HSQUIRRELVM v)
         }
         break;
     }
-    return sq_throwerror(v, _SC("invalid paramter (%s)"), sq_gettypename(v, 2));
+    return sq_throwerror(v, _SC("invalid parameter (%s)"), sq_gettypename(v, 2));
 }
 
 static SQRESULT _system_signal(HSQUIRRELVM v)

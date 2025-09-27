@@ -19,7 +19,7 @@ extern const unsigned char isUpperMapTable[];
 #define isLowerMap(x) isLowerMapTable[((unsigned char)x)]
 #define isUpperMap(x) isUpperMapTable[((unsigned char)x)]
 
-//The functions bellow convert in place, overwiten passed paramters
+//The functions bellow convert in place, overwiten passed parameters
 int strLenSubSetLatinUtf8( const char *str );
 int nstrLenSubSetLatinUtf8( const char *str, int n );
 int isDeaccentableSubSetLatinUtf8( const char *str );

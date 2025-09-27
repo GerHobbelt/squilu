@@ -673,7 +673,7 @@ static SQRESULT sq_pgsql_statement_exec(HSQUIRRELVM v, int exec_type){
 	SQInteger psize = sq_getsize(v, 2);
 	if(psize != self->param_count)
     {
-        return sq_throwerror(v, _SC("Wrong number of paramters, exptexted %d"), self->param_count);
+        return sq_throwerror(v, _SC("Wrong number of parameters, exptexted %d"), self->param_count);
     }
 	int result = SQ_ERROR;
 	SQBool bval;
@@ -752,7 +752,7 @@ static SQRESULT sq_pgsql_statement_exec(HSQUIRRELVM v, int exec_type){
 	SQInteger psize = sq_getsize(v, 2);
 	if(psize != self->param_count)
     {
-        return sq_throwerror(v, _SC("Wrong number of paramters, exptexted %d"), self->param_count);
+        return sq_throwerror(v, _SC("Wrong number of parameters, exptexted %d"), self->param_count);
     }
 	int result = SQ_ERROR;
 	SQBool bval;
